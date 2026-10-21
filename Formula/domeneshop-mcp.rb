@@ -1,0 +1,18 @@
+class DomeneshopMcp < Formula
+  desc "MCP server for the Domeneshop API: domains, DNS, forwards and invoices"
+  homepage "https://github.com/martinzachariassen/domeneshop-mcp"
+  url "https://registry.npmjs.org/domeneshop-mcp/-/domeneshop-mcp-1.1.0.tgz"
+  sha256 "45743c161de8bee3e35d5d6c819b41ad7d5b3f7bca5698b18d9c7e2831f036ad"
+  license "MIT"
+
+  depends_on "node"
+
+  def install
+    system "npm", "install", *std_npm_args
+    bin.install_symlink libexec.glob("bin/*")
+  end
+
+  test do
+    assert_match version.to_s, shell_output("#{bin}/domeneshop-mcp --version")
+  end
+end
