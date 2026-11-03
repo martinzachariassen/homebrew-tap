@@ -1,8 +1,8 @@
 class DomeneshopMcp < Formula
   desc "MCP server for the Domeneshop API: domains, DNS, forwards and invoices"
   homepage "https://github.com/martinzachariassen/domeneshop-mcp"
-  url "https://registry.npmjs.org/domeneshop-mcp/-/domeneshop-mcp-2.0.3.tgz"
-  sha256 "993327568ae91e6ea01fef64f97fd3f4b71efd358e2eee23856bd3825991717a"
+  url "https://registry.npmjs.org/domeneshop-mcp/-/domeneshop-mcp-2.0.4.tgz"
+  sha256 "06ba5ab96853a4f11733f9ce18cf8f7f592089eeff5d5e5d55cb1a22b30ab3a3"
   license "MIT"
 
   depends_on "node"
